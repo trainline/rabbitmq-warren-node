@@ -1,0 +1,54 @@
+{
+  "name": "warren",
+  "version": "1.0.0",
+  "description": "A fault-tolerant client for a RabbitMQ warren (multiple shared-nothing instances)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "istanbul test -- _mocha",
+    "coverage": "npm test --coverage && istanbul check-coverage --statement 100 --branch 100 --function 100",
+    "precommit": "npm run lint && npm run coverage"
+  },
+  "keywords": [
+    "rabbitmq",
+    "warren",
+    "rascal",
+    "amqplib"
+  ],
+  "author": "trainline",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trainline/RabbitMQ-Warren-Node"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "backoff": "^2.4.1",
+    "debug": "^2.2.0",
+    "husky": "^0.10.1",
+    "lodash.clonedeep": "^3.0.2",
+    "lodash.defaults": "^3.1.2",
+    "lodash.map": "^3.1.4",
+    "lodash.once": "^3.0.1",
+    "lodash.shuffle": "^3.1.0",
+    "rascal": "^0.10.0"
+  },
+  "devDependencies": {
+    "code": "1.4.1",
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^1.0.0",
+    "istanbul": "^0.3.20",
+    "lodash.clone": "^3.0.3",
+    "lodash.foreach": "^3.0.3",
+    "lodash.get": "^3.7.0",
+    "lodash.isequal": "^3.0.4",
+    "lodash.merge": "^3.3.2",
+    "lodash.omit": "^3.1.0",
+    "lodash.times": "^3.0.3",
+    "mocha": "^2.3.4",
+    "proxyquire": "^1.7.2"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb/base",
+  "rules": {
+    "strict": [2, "global"],
+    "no-use-before-define": [2, "nofunc"]
+  },
+  "ecmaFeatures": {
+    "modules": false
+  }
+}
