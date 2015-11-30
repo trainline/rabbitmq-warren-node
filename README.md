@@ -1,20 +1,34 @@
-# Warren
+# warren
 
 [![Build Status](https://travis-ci.org/trainline/RabbitMQ-Warren-Node.svg?branch=master)](https://travis-ci.org/trainline/RabbitMQ-Warren-Node)
 [![Coverage Status](https://coveralls.io/repos/trainline/RabbitMQ-Warren-Node/badge.svg?branch=master&service=github)](https://coveralls.io/github/trainline/RabbitMQ-Warren-Node?branch=master)
 
-A warren is a set of shared-nothing RabbitMQ instances with a load balancer stuck in front of them (active-passive). This module implements a variation of that pattern but does away with the load balancer.  A publisher can publish to any instance and a consumer listens to all instances. Single publish - multiple listen. This approach improves availability of a broker to do work against, it's effectively active-active but does not replicate messages as found with the Shovel/Federation/Mirrored queue features.  If you use non-persistent messages with this pattern, message loss is still possible - in that case you're better off with publishing to multiple brokers at the same time  (unsupported).  When using persistent messages, catastrophic broker failure will still cause message loss. Use where appropriate.
+## A warren is a shared-nothing RabbitMQ cluster
 
-This module
-* is built on amqplib and rascal
-* takes care of connecting to multiple brokers (and retries connecting on failures)
-* subscribes to messages on all brokers (and recovers from errors, subscribes on newly connected brokers)
-* publishes messages to a single broker (and tries other brokers if failed)
+The original warren pattern uses a load balancer stuck in front of the Rabbit instances (active-passive). This module implements a variation of that pattern but does away with the load balancer.
 
-## Install
+## Single publish - multiple listen
+
+A publisher can publish to any instance and a consumer listens to all instances. This approach improves availability of a broker to do work against, it's effectively **active-active** but does not replicate messages as found with the Shovel/Federation/Mirrored queue features.  
+
+## Caveats
+
+If you use non-persistent messages with this pattern, message loss is still possible - in that case you're better off with publishing to multiple brokers at the same time (unsupported).  When using persistent messages, catastrophic broker failure will still cause message loss. Use where appropriate.
+
+
+## tl;dr;
+
+This module:
+  * takes care of connecting to multiple brokers (and retries connecting on failures)
+  * subscribes to messages on all brokers (and recovers from errors, subscribes on newly connected brokers)
+  * publishes messages to a single broker (and tries other brokers if failed)
+
+## Installation
+
+As usual, with npm:
 
 ```bash
-$ npm install warren --save
+$ npm install --save warren
 ```
 
 ## Usage
