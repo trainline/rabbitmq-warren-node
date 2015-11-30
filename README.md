@@ -5,18 +5,18 @@
 
 ## A warren is a shared-nothing RabbitMQ cluster
 
-The original warren pattern uses a load balancer stuck in front of the Rabbit instances (active-passive). This module implements a variation of that pattern but does away with the load balancer.
+The original warren pattern uses a load balancer stuck in front of the Rabbit instances (active-passive). This module implements a variation of that pattern but does away with the load balancer and is **active-active**.
 
 ## Single publish - multiple listen
 
-A publisher can publish to any instance and a consumer listens to all instances. This approach improves availability of a broker to do work against, it's effectively **active-active** but does not replicate messages as found with the Shovel/Federation/Mirrored queue features.  
+A publisher can publish to any instance and a consumer listens to all instances. This approach improves availability of a broker to do work against, it's effectively active-active but does not replicate messages as found with the Shovel/Federation/Mirrored queue features.  
 
 ## Caveats
 
 If you use non-persistent messages with this pattern, message loss is still possible - in that case you're better off with publishing to multiple brokers at the same time (unsupported).  When using persistent messages, catastrophic broker failure will still cause message loss. Use where appropriate.
 
 
-## tl;dr;
+## tl;dr
 
 This module:
   * takes care of connecting to multiple brokers (and retries connecting on failures)
