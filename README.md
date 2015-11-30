@@ -9,7 +9,7 @@ The original warren pattern uses a load balancer stuck in front of the Rabbit in
 
 ## Single publish - multiple listen
 
-A publisher can publish to any instance and a consumer listens to all instances. This approach improves availability of a broker to do work against, it's effectively active-active but does not replicate messages as found with the Shovel/Federation/Mirrored queue features.  
+A publisher can publish to any instance and a consumer listens to all instances. This approach improves availability of a broker to do work against, it's effectively active-active but does not replicate messages as found with the Shovel/Federation/Mirrored queue features.
 
 ## Caveats
 
