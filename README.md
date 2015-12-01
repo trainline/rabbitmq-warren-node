@@ -48,16 +48,15 @@ const options = {
 }
 
 createWarren(options, (err, warren) => {
-  warren.on('error', error => {
-    // handle errors
-  }
   warren.subscribe('messages', (message, content) => {
     // message received
   });
   warren.publish('messages', message, { timeout: 100 }, err => {
     // message published
   });
-}).on('error', error => console.log(error));
+}).on('error', error => {
+  // handle errors
+});
 ```
 
 
