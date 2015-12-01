@@ -2,7 +2,8 @@
 
 [![build](https://travis-ci.org/trainline/rabbitmq-warren-node.svg?branch=master)](https://travis-ci.org/trainline/rabbitmq-warren-node)
 [![coverage](https://coveralls.io/repos/trainline/rabbitmq-warren-node/badge.svg?branch=master&service=github)](https://coveralls.io/github/trainline/rabbitmq-warren-node?branch=master)
-[![dependencies](https://img.shields.io/david/trainline/rabbitmq-warren-node.svg)](LICENSE.txt)
+[![dependencies](https://img.shields.io/david/trainline/rabbitmq-warren-node.svg)](https://david-dm.org/trainline/rabbitmq-warren-node)
+![node](https://img.shields.io/node/v/warren.svg)
 [![npm](https://img.shields.io/npm/v/warren.svg)](https://www.npmjs.com/package/warren)
 [![licence](https://img.shields.io/npm/l/warren.svg)](LICENSE.txt)
 
