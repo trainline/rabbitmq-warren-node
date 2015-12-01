@@ -1,7 +1,8 @@
 # warren
 
-[![Build Status](https://travis-ci.org/trainline/rabbitmq-warren-node.svg?branch=master)](https://travis-ci.org/trainline/rabbitmq-warren-node)
-[![Coverage Status](https://coveralls.io/repos/trainline/rabbitmq-warren-node/badge.svg?branch=master&service=github)](https://coveralls.io/github/trainline/rabbitmq-warren-node?branch=master)
+[![build status](https://travis-ci.org/trainline/rabbitmq-warren-node.svg?branch=master)](https://travis-ci.org/trainline/rabbitmq-warren-node)
+[![coverage status](https://coveralls.io/repos/trainline/rabbitmq-warren-node/badge.svg?branch=master&service=github)](https://coveralls.io/github/trainline/rabbitmq-warren-node?branch=master)
+[![npm version](https://img.shields.io/npm/v/warren.svg)](https://www.npmjs.com/package/warren)
 
 ## A warren is a shared-nothing RabbitMQ cluster
 
