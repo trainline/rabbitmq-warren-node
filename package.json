@@ -11,11 +11,26 @@
     "coveralls": "npm run coverage && istanbul-coveralls"
   },
   "contributors": [
-    { "name": "Csaba Palfi", "url": "https://github.com/csabapalfi" },
-    { "name": "Pedro Teixeira", "url": "https://github.com/pgte" },
-    { "name": "Frederik Brysse", "url": "https://github.com/frederik256" },
-    { "name": "Hassy Veldstra", "url": "https://github.com/hassy" },
-    { "name": "João Jerónimo", "url": "https://github.com/joaojeronimo" }
+    {
+      "name": "Csaba Palfi",
+      "url": "https://github.com/csabapalfi"
+    },
+    {
+      "name": "Pedro Teixeira",
+      "url": "https://github.com/pgte"
+    },
+    {
+      "name": "Frederik Brysse",
+      "url": "https://github.com/frederik256"
+    },
+    {
+      "name": "Hassy Veldstra",
+      "url": "https://github.com/hassy"
+    },
+    {
+      "name": "João Jerónimo",
+      "url": "https://github.com/joaojeronimo"
+    }
   ],
   "keywords": [
     "rabbitmq",
