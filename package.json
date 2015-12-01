@@ -1,6 +1,6 @@
 {
   "name": "warren",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A fault-tolerant client for a RabbitMQ warren (multiple shared-nothing instances)",
   "main": "index.js",
   "scripts": {
