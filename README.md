@@ -128,7 +128,7 @@ warren.subscribe(subscription, (message, content, ackOrNack) => {
 ## Acknowledgements
 
 * Thanks to [Pedro Teixeira](https://github.com/pgte), [Hassy Veldstra](https://github.com/hassy) and [João Jerónimo](https://github.com/joaojeronimo) for building the first versions of warren
-* [Frederik Brysse](https://github.com/frederik256) came up with the idea of warren and designed the high level architecture.
+* [Frederik Brysse](https://github.com/frederik256) who designed the high level architecture
 * This project build on the amazing [rascal](https://github.com/guidesmiths/rascal) and [amqplib](https://github.com/squaremo/amqp.node) modules. Thanks to [Stephen Creswell](https://github.com/cressie176) and [Michael Bridgen](https://github.com/squaremo)!
 
 
