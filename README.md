@@ -33,17 +33,17 @@ $ npm install --save warren
 
 ## Usage
 
-Having a set of Rascal configurations, create a warren:
+warren uses [rascal configuration](https://github.com/guidesmiths/rascal#configuration) to define exchanges, queues, etc. It expects a `brokerConfig` with a single default vhost named `/`. Different host connections are specified under `hosts`.
 
 ```js
 const createWarren = require('warren');
 
 const options = {
   hosts: [
-    // multiple rascal connection configs
+    // multiple rascal vhost connection configs
   ],
   brokerConfig: {
-    // rascal config with exchange, queue, etc definitions
+    // rascal config (same for all hosts)
   }
 }
 
